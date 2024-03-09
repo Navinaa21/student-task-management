@@ -18,9 +18,7 @@ const db = mysql.createConnection({
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
   port: 1433,
   ssl: {
-    rejectUnauthorized: true,
-    minVersion: 'TLSv1.2',
-    ca: fs.readFileSync("file/DigiCertGlobalRootCA.crt.pem")
+    rejectUnauthorized: true
   },
 });
 
