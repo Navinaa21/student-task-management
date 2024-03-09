@@ -19,7 +19,8 @@ const db = mysql.createConnection({
   port: 1433,
   ssl: {
     // For MySQL2, use 'ssl' instead of 'options' and 'encrypt'
-    rejectUnauthorized: true, // Set to false for development/test environments
+    rejectUnauthorized: true,
+    minVersion: 'TLSv1.2',// Set to false for development/test environments
   },
 });
 
