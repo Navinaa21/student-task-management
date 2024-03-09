@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
@@ -16,7 +16,6 @@ const db = mysql.createConnection({
   password: 'Navin@111',
   host: 'fsdtask.database.windows.net',
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
-  port: 1433,
   ssl: {ca: fs.readFileSync("file/DigiCertGlobalRootCA.crt.pem")}
 });
 
