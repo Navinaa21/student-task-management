@@ -18,9 +18,9 @@ const db = mysql.createConnection({
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
   port: 1433,
   ssl: {
-    // For MySQL2, use 'ssl' instead of 'options' and 'encrypt'
     rejectUnauthorized: true,
-    minVersion: 'TLSv1.2',// Set to false for development/test environments
+    minVersion: 'TLSv1.2',
+    ca: [file/DigiCertGlobalRootCA.crt.pem], // Array of certificate authority (CA) certificates
   },
 });
 
