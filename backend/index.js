@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   user: 'navinaa',
   password: 'Navin@111',
-  server: 'fsdtask.database.windows.net',
+  host: 'fsdtask.database.windows.net',
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
   port: 1433,
   options: {
