@@ -17,9 +17,9 @@ const db = mysql.createConnection({
   host: 'fsdtask.database.windows.net',
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
   port: 1433,
-  options: {
-    encrypt: true, // Use this if you're on Windows Azure
-    trustServerCertificate: false, // Change to true for development/test environments
+  ssl: {
+    // For MySQL2, use 'ssl' instead of 'options' and 'encrypt'
+    rejectUnauthorized: true, // Set to false for development/test environments
   },
 });
 
