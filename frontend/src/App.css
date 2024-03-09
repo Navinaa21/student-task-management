@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(242, 234, 237);
+  /* Add other styles as needed */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(242, 234, 237);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: rgb(239, 221, 221);
+  border: none;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+/* App.css */
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 3cm;
+  
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.table-container {
+  margin: 40px;
+  border: 1px solid rgb(0, 0, 0); /* Set the border properties as needed */
+  overflow: hidden; /* Ensure the border is visible even if the table overflows */
+  box-sizing: border-box;
+  
+}
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+.tskn{
+  padding-bottom : 1cm;
+}
+
+.nav{
+  padding-bottom: 1cm;
+  margin: 1cm;
+}
+
+
+.lg{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: fixed;
+  top: 30px; /* Adjust the top distance according to your preference */
+  right: 30px; /* Adjust the right distance according to your preference */
+  padding: 10px 15px;
+  background-color: #ff0000; /* Set your desired background color */
+  color: #ffffff; /* Set your desired text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lg:hover {
+  background-color: #cc0000; /* Set your desired hover background color */
+}
+
+
+.add{
+  border-radius: 0.3cm;
+  background-color: rgb(84, 67, 214);
+  margin-left: 1cm;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.add:hover{
+  background-color: #4733b7;
+}
+
+/* CSS for Centering Mark as Completed Button */
+.mc {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff; /* Set your desired text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mc:hover {
+  background-color: #2980b9; /* Set your desired hover background color */
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.task-form {
+  max-width: 310px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.close-button:hover{
+  background-color: red;
+}
