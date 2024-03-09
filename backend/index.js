@@ -20,7 +20,7 @@ const db = mysql.createConnection({
   ssl: {
     rejectUnauthorized: true,
     minVersion: 'TLSv1.2',
-    ca: [file/DigiCertGlobalRootCA.crt.pem], // Array of certificate authority (CA) certificates
+    ca: fs.readFileSync("file/DigiCertGlobalRootCA.crt.pem")
   },
 });
 
