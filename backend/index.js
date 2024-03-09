@@ -16,10 +16,7 @@ const db = mysql.createConnection({
   password: 'Navin@111',
   host: 'fsdtask.database.windows.net',
   database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
-  port: 1433,
-  ssl: {
-    rejectUnauthorized: true
-  },
+  port: 1433
 });
 
 db.connect((err) => {
