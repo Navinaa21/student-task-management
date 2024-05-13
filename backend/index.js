@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  user: 'navinaa',
-  password: 'Navin@111',
-  host: 'fsdtask.database.windows.net',
-  database: 'task_2024-03-09T09-33Z_2024-03-09T15-51Z',
+  host:process.env.DB_HOST,
+  user:process.env.DB_USER,
+  password:process.env.DB_PASSWORD,
+  database:"",
   ssl: {ca: fs.readFileSync("file/DigiCertGlobalRootCA.crt.pem")}
 });
 
